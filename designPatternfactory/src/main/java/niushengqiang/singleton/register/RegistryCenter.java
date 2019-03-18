@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 这里是个单例的管理中心,默认所有的单例都可以由这里处理
  */
 public class RegistryCenter {
-    private static Map<String,Object> rc=new ConcurrentHashMap<>();
+    private static Map<String,Object> rc=new ConcurrentHashMap<String,Object>();
     public static Object getInstance(String className){
         try{
             if(!rc.containsKey(className)){

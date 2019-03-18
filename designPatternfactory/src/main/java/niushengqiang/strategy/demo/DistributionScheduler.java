@@ -13,7 +13,7 @@ import java.util.List;
  * 每个策略模式都应该有一个类似注册中心的地方
  */
 public class DistributionScheduler {
-    private static final List<DistributeFans> registryCenter=new ArrayList<>();
+    private static final List<DistributeFans> registryCenter=new ArrayList<DistributeFans>();
     static {
         registryCenter.add(new AverageDistribution());
         registryCenter.add(new LeastDistribution());

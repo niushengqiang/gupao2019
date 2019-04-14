@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="designPatternfactory:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="designPattern-factory-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="designPatternfactory:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -12,6 +12,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
+
 /**
  * 进行数据加载的类
  *  1.扫描配置资源
@@ -75,7 +77,7 @@ public class GPBeanDefinitionReader {
             returns.add(gpBeanDefinition);
 
             //设置当前bean的依赖bean;
-            List<String> dependsOn = gpBeanDefinition.getDependsOn();
+            Set<String> dependsOn = gpBeanDefinition.getDependsOn();
             Field[] fields = aClass.getFields();
             for (Field f:fields ) {
                 if(f.isAnnotationPresent(GPAutowired.class)){

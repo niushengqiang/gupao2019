@@ -1,4 +1,4 @@
-package gp-niu;
+package gpspring;
 
 /**
  * Hello world!

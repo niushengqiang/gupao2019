@@ -6,7 +6,12 @@ package gpspring.framework.beans.config;
 public class GPBeanWrapper {
     private Object wrappedObject;
     private Class wrappedObjectClass;
-    private boolean isSingleton;
+
+
+    public GPBeanWrapper(Object wrappedObject) {
+        this.wrappedObject = wrappedObject;
+        this.wrappedObjectClass=wrappedObject.getClass();
+    }
 
     public Object getWrappedObject() {
         return wrappedObject;
@@ -22,13 +27,5 @@ public class GPBeanWrapper {
 
     public void setWrappedObjectClass(Class wrappedObjectClass) {
         this.wrappedObjectClass = wrappedObjectClass;
-    }
-
-    public boolean isSingleton() {
-        return isSingleton;
-    }
-
-    public void setSingleton(boolean singleton) {
-        isSingleton = singleton;
     }
 }

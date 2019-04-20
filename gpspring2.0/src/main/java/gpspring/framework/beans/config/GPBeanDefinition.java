@@ -1,6 +1,7 @@
 package gpspring.framework.beans.config;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Tom.
@@ -10,7 +11,7 @@ public class GPBeanDefinition {
     private boolean lazyInit = false;
     private String factoryBeanName;
     private boolean isSingleton;
-    private List<String> dependsOn;
+    private Set<String> dependsOn;
 
     public String getBeanClassName() {
         return beanClassName;
@@ -44,11 +45,11 @@ public class GPBeanDefinition {
         isSingleton = singleton;
     }
 
-    public List<String> getDependsOn() {
+    public Set<String> getDependsOn() {
         return dependsOn;
     }
 
-    public void setDependsOn(List<String> dependsOn) {
+    public void setDependsOn(Set<String> dependsOn) {
         this.dependsOn = dependsOn;
     }
 }

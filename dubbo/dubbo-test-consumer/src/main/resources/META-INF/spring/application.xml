@@ -7,11 +7,13 @@ http://code.alibabatech.com/schema/dubbo
 http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="consumer"  />
-    <dubbo:registry address="N/A" />
-    <dubbo:protocol name="dubbo" port="20880" />
+
+    <!--<dubbo:registry address="N/A" />-->
+    <!--<dubbo:registry address="multicast://224.5.6.7:1234" />-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
 
     <dubbo:reference id="helloService"
-                     interface="com.yurang.HelloService"
-                     url="dubbo://localhost:20880/com.yurang.HelloService"/>
+                     interface="com.yurang.HelloService"/>
 
 </beans>

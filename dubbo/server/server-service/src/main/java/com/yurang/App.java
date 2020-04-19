@@ -16,5 +16,6 @@ public class App
     {
         Main. main (args);
         logger.info("dubbo 启动完成...");
+
     }
 }

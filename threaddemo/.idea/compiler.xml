@@ -9,7 +9,7 @@
         <module name="mythreaddemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="mythreaddemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

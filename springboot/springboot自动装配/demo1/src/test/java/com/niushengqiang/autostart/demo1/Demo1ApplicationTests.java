@@ -13,4 +13,12 @@ public class Demo1ApplicationTests {
 	public void contextLoads() {
 	}
 
+	static  ThreadLocal threadLocal=new ThreadLocal();
+	@Test
+	public void testTL(){
+		threadLocal.set("123");
+		threadLocal.get();
+	}
+
+
 }
